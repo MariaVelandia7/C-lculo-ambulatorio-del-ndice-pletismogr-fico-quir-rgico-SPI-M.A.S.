@@ -49,6 +49,7 @@ Como la variación en la absorción de luz por parte de los lechos capilares pro
 ### b) Explicación del circuito 
 
 <img width="900" height="1600" alt="image" src="https://github.com/user-attachments/assets/693145a0-f427-4e81-9438-3b4ceead571e" />
+
 (Fig 1. Conexión del circuito sensor TCST110 - arduino uno)
 
 ### c) ¿Qué hace cada componente? 
@@ -114,7 +115,7 @@ La constante infinitesimal eps se añade al denominador para evitar errores por 
 Donde la ponderación asigna un 70% al componente vascular (PPGA_norm) y un 30% al componente cardíaco (HBI_norm), garantizando que a mayor respuesta nociceptiva o vasoconstricción el valor resultante del SPI se incremente hacia 100. La visualización en tiempo real se realiza graficando la señal filtrada con una ventana móvil fija de 10 segundos (xlim([t-10 t])). A continuación se muestran los resultados obtenidos en la gráfica de tiempo real y la gráfica de resultados SPI
 
 <img width="1600" height="850" alt="image" src="https://github.com/user-attachments/assets/bcabcaaf-4f92-435e-8561-71d10f1d189d" />
-(Fig 3. Gráfica señal PPG en tiempo real)
+(Fig 2. Gráfica señal PPG en tiempo real)
 
 ### e) Método ejecución CPT
 Para validar la respuesta dinámica del sistema frente a un estímulo nociceptivo, se llevó a cabo el protocolo de la Prueba del Frío (Cold Pressor Test - CPT) con una botella de agua congelada sobre el cuello del sujeto de estudio durante un intervalo continuo de 120 segundos divididos en tres fases:  
@@ -125,7 +126,7 @@ Para validar la respuesta dinámica del sistema frente a un estímulo nociceptiv
 ## IV. ANÁLISIS Y RESULTADOS 
 
 <img width="1600" height="765" alt="image" src="https://github.com/user-attachments/assets/d6f88da4-c650-40d6-a92c-643e01e47400" />
-(Fig 4. Onda PPG antes y después de CPT)
+(Fig 3. Onda PPG antes y después de CPT)
 
 En la gráfica se muestran tres comportamientos o momentos claramente diferenciables:
 
@@ -149,7 +150,7 @@ Finalmente, en la fase de recuperación, al quitar la botella fría el cuerpo de
 Después de ese pico, la amplitud empieza a bajar poco a poco hacia el final del registro, lo cual tiene sentido: esas sustancias que causaban la dilatación extra se van disipando y el cuerpo va recuperando su estado normal de tono vascular. Sin embargo volver al equilibrio no es inmediato y no se registró suficiente tiempo la señal para visualizar la estabilización.
 
 <img width="1394" height="912" alt="Figure_2" src="https://github.com/user-attachments/assets/9a9bdadf-842f-4855-bcb9-df027dcce215" />
-(Fig 5. Curva SPI)
+(Fig 4. Curva SPI)
 
 En la gráfica se observan tres comportamientos claramente diferenciados, coherentes con las tres fases del protocolo experimental:
 
