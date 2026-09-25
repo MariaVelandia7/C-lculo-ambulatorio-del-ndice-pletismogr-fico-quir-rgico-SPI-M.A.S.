@@ -33,6 +33,7 @@ La fórmula matemática para el cálculo del SPI según lo investigado correspon
 
 <img width="941" height="94" alt="image" src="https://github.com/user-attachments/assets/93738e7b-0fba-4c9b-8b41-230f81efe8bf" />
 (Ecuación 1. Fórmula cálculo SPI)
+
 Los rangos de valores para PPGA-norm y HBI-norm están escalados entre 0 y 100, mientras que las constantes 0.7 y 0.3 son coeficientes establecidos  para priorizar el componente vascular. El resultado del SPI se obtiene en una escala entre 0 y 100, donde valores más altos reflejan una mayor respuesta nociceptiva. Durante la anestesia general, los rangos esperados de este índice rondan entre 20 y 50; un rango mayor puede provocar cierto grado de conciencia, mientras que un rango menor puede simbolizar un alto riesgo para el paciente.
 
 ### c) Estimulación Térmica Localizada (Prueba de Frío en el Cuello / CPT).
@@ -41,6 +42,7 @@ Esta activación simpática inmediata genera vasoconstricción periférica por l
 
 ## III. METODOLOGÍA EXPERIMENTAL 
 ### a) Sensor y Circuito de Acondicionamiento Análogo (TCST110)
+
 Para la adquisición de la señal fotopletismográfica (PPG), se empleó un sensor óptico basado en el optointerruptor TCST110, el cual fue adecuado físicamente para funcionar en modo de reflectancia cutánea, la verificación inicial del emisor de luz infrarroja (LED IR) se realizó mediante una cámara digital para comprobar la emisión óptica continua y asegurar la correcta polarización directa del diodo.
 Como la variación en la absorción de luz por parte de los lechos capilares produce cambios de voltaje de muy baja amplitud (del orden de milivoltios) y propensos a interferencias por luz ambiental o nivel de acoplamiento, se implementó una etapa de acondicionamiento analógico.
 - Acondicionamiento del Sensor TCST110: La corriente circulante por el foto transistor del TCST110 se convierte a una señal de voltaje pulsátil mediante una red de resistencias de polarización.
