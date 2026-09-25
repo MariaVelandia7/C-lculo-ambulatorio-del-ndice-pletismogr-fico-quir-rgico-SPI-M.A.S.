@@ -53,6 +53,35 @@ Como la variación en la absorción de luz por parte de los lechos capilares pro
 
 ### c) ¿Qué hace cada componente? 
 
+Para nuestro circuito, nos guiamos del circuito, para capturar las variaciones del volumen sanguíneo periférico, sugerido en la guía. 
+Desglosaremos los componentes por etapas y flujo de corrientes. 
+
+### Etapa 1: Control del LED
+
+Esta etapa consta de la resistencia de 10 kΩ qué es la que limita la corriente que ingresa a la base del transistor 2N3904, una vez llegamos al transistor npn este va a actuar como un regulador de corriente controlado desde la fuente de voltaje para alimentar el emisor infrarrojo, conectado al colector del transistor tenemos el potenciómetro de 1 kΩ qué nos permite ajustar cuánta corriente fluye a través del diodo del infrarrojo, este básicamente nos permite calibrar la intensidad de luz emitida, por último, llegamos al LED infrarrojo del TCST2103 el cual recibe la corriente desde el emisor del transistor y la descarga a Tierra, emitiendo una luz constante. 
+
+### Etapa 2: detección óptica y conversión de luz a voltaje
+
+Cuando la luz de LED incide en el fototransistor, entra a una conducción y deja pasar la corriente, después de esto, si hay luz constante, el fototransistor conduce esta señal a Tierra, pero si se pone el dedo en este caso, el flujo sanguíneo absorbe parte del haz de luz y el fototransistor reduce su conducción y la resistencia de 5 kΩ eleva el voltaje, y esto hace que se convierte en los cambios de luz en una señal de voltaje variable. 
+
+### Etapa 3: filtro pasa altas (HPF) 
+
+El capacitor electrolítico bloquea la componente de corriente continua, lo que elimina el voltaje causado por la luz ambiental, y sólo permite el paso de las variaciones de voltaje, la resistencia de 47 kΩ es el retorno a Tierra, para que el capacitor se descargue. Esta etapa es importante ya que con su frecuencia de corte de 0.7 Hz, se elimina las señales lentas, lo cual hace pasar solamente los pulsos superiores a 42 pulsaciones por minuto.
+
+### Etapa 4: Amplificación y filtro pasa bajas (LPF)
+
+Aquí se implementó un amplificador operacional LM358 configurado como amplificador de inversor. Haciendo los cálculos podemos obtener que su ganancia está determinada por la retroalimentación de la resistencia de 680 kΩ y la de 6.8 kΩ lo cual nos da un resultado de 101 veces amplificada la variación de señal.
+El capacitor cerámico 104 está conectado en paralelo con la resistencia de 680k, esto crea un filtro pasa bajas activo con una frecuencia de corte de 2.34 Hertz, que filtra el ruido eléctrico, de alta frecuencia y la luz artificial
+
+### Etapa 5: Offset y control de ganancia
+
+El potenciómetro de 5 kΩ funciona como un divisor de voltaje para atenuar la amplitud de la señal, amplificada antes de pasar a la siguiente etapa, el potenciómetro de 10 kΩ qué está conectado entre Vcc y Vee introduce un voltaje en la entrada, no inversora del segundo amplificador para ajustar el nivel medio de la señal y evita que se sature. 
+
+### Etapa 6: segunda etapa de amplificación y salida
+
+Siguiendo con el amplificador operacional, tenemos otra etapa, no inversora con otras resistencias que vuelven a multiplicar la señal por una ganancia de 101, en el pin 7 del amplificador está la salida, la cual entrega la señal filtrada y con suficiente amplitud al pin análogo A0 del Arduino uno para su posterior, lectura y procesamiento digital.
+
+
 ### d) Código de adquisición y cálculo SPI 
 Para el funcionamiento del sistema se distinguió la detección de los componentes fisiológicos de la onda y el cálculo dinámico del índice SPI conforme a la ecuación descrita en el marco teórico:
 
