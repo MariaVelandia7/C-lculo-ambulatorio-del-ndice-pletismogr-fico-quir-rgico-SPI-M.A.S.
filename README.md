@@ -98,6 +98,24 @@ Para validar la respuesta dinámica del sistema frente a un estímulo nociceptiv
 <img width="1600" height="765" alt="image" src="https://github.com/user-attachments/assets/d6f88da4-c650-40d6-a92c-643e01e47400" />
 (Fig 4. Onda PPG antes y después de CPT)
 
+En la gráfica se muestran tres comportamientos o momentos claramente diferenciables:
+
+### Fase de línea base (0-40 segundos)
+La señal en esta sección es muy variable, presenta una amplitud pico-valle alta, con máximos que llegan hasta ~0.10–0.125 V y valles que bajan hasta ~‑0.13/‑0.145 V. Esta variabilidad tan marcada en el segmento de reposo sugiere que el circuito o el sujeto de prueba aún no estaba completamente estabilizado al comenzar el registro (posibles microajustes del dedo sobre el sensor, respiración profunda o delay del código/circuito). Aún así se da a entender que es la señal ppg en reposo.
+
+### Fase de estimulación fría / CPT Cold Pressor Test (40-90 segundos)
+En esta ventana de tiempo se puede observar varios pulsos con reducción de amplitud inicialmente que demuestran la vasoconstricción periferica generada por la activación simpatica. También aparecen valles más profundos, lo cual indica que la señal tiene oscilaciones bruscas probablemente por el reflejo simpatico agudo. Finalmente también se puede observar que el intervalo entre picos dismuye, lo cual responde a la taquicardía o elevación de la frecuencia cardiaca a causa del sistema simpatico. 
+
+### Fase de recuperación (90-120 segundos)
+Al retirar el estímulo la señal PPG tiene un repunte en la amplitud pico a pico con un máximo local de 0.107 V y un valle de ‑0.09 V. Este incremento transitorio es consistente con la vasodilatación reactiva compensatoria descrita en el marco teórico. Después de este pico de sobrecompensación, la amplitud de la onda comienza a decaer progresivamente hacia el final del registro, con picos de apenas 0.02–0.03 V entre t≈103 y 107 s. Esta caída sugiere que el sistema cardiovascular periférico estaba iniciando su reequilibrio hacia los valores de línea base, a medida que se disipan los mediadores vasodilatadores locales y el tono vascular basal se restablece.
+
+### Análisis fisiológico
+Desde el punto de vista fisiológico, los tres momentos identificados en la señal PPG corresponden a estados funcionales distintos del sistema nervioso autónomo, y su secuencia es coherente con lo que se espera ante un estímulo nociceptivo/térmico agudo.
+
+Durante la línea base, el predominio funcional es de un tono autonómico mixto sin activación simpática marcada, donde la amplitud del pulso depende principalmente de la distensibilidad basal de los vasos periféricos y del volumen sistólico normal. La alta variabilidad observada en esta fase no contradice este estado de reposo; más bien refleja la superposición de moduladores fisiológicos normales, junto con factores no fisiológicos como el acomodamiento inicial del dedo sobre el sensor.
+
+En la fase de CPT, el mecanismo central es el reflejo simpático agudo desencadenado por la activación de termorreceptores y nociceptores cutáneos en la región. La señal aferente asciende por la médula espinal hasta centros bulbares y talámicos, generando una descarga simpática eferente que actúa sobre dos efectores clave: los receptores α1-adrenérgicos del músculo liso arteriolar periférico, produciendo vasoconstricción y, por tanto, la caída de amplitud del pulso observada, y los receptores β1-adrenérgicos del nodo sinusal, que aceleran la frecuencia cardíaca y explican el acortamiento del intervalo entre picos. Cabe aclarar que las oscilaciones bruscas y los valles particularmente profundos dentro de esta ventana no deben interpretarse únicamente como ruido, son también coherentes por los mecanismos regulatorios que compiten entre sí en tiempo real, como el barorreflejo (que intenta frenar la subida de presión y frecuencia cardíaca generada por la vasoconstricción) y la propia respiración, que sigue modulando la señal incluso bajo activación simpática.
+
 ## V. CONCLUSIONES
 
 ## VI. PREGUNTAS PARA LA DISCUSIÓN
