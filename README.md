@@ -126,6 +126,8 @@ Para validar la respuesta dinámica del sistema frente a un estímulo nociceptiv
 
 <img width="1600" height="765" alt="image" src="https://github.com/user-attachments/assets/d6f88da4-c650-40d6-a92c-643e01e47400" />
 (Fig 4. Onda PPG antes y después de CPT)
+<img width="1394" height="912" alt="Figure_2" src="https://github.com/user-attachments/assets/370251c2-d0a7-4842-9750-9c6da905a5e4" />
+
 
 En la gráfica se muestran tres comportamientos o momentos claramente diferenciables:
 
@@ -147,6 +149,20 @@ En la fase de CPT, el mecanismo central es el reflejo simpático agudo desencade
 
 Finalmente, en la fase de recuperación, al quitar la botella fría el cuerpo deja de recibir la señal de "alerta" que mantenía activado el sistema simpático, así que este empieza a apagarse poco a poco y los vasos sanguíneos dejan de estar tan contraídos. Sin embargo, mientras duró el estímulo, el dedo estuvo recibiendo menos sangre de lo normal por la vasoconstricción, y el tejido al tener deficiencia de oxigeno fue acumulando pequeñas sustancias de desecho del metabolismo (como adenosina y CO₂) que actúan como señales locales para dilatar los vasos. Entonces, cuando el sistema simpático finalmente se relaja, estos vasos no solo vuelven a su tamaño normal, sino que se abren un poco más de lo habitual por un momento, como una especie de "rebote", esto es lo que se conoce como hiperemia reactiva. 
 Después de ese pico, la amplitud empieza a bajar poco a poco hacia el final del registro, lo cual tiene sentido: esas sustancias que causaban la dilatación extra se van disipando y el cuerpo va recuperando su estado normal de tono vascular. Sin embargo volver al equilibrio no es inmediato y no se registró suficiente tiempo la señal para visualizar la estabilización.
+
+<img width="1394" height="912" alt="Figure_2" src="https://github.com/user-attachments/assets/9a9bdadf-842f-4855-bcb9-df027dcce215" />
+(Fig 5. Curva SPI)
+
+En la gráfica se observan tres comportamientos claramente diferenciados, coherentes con las tres fases del protocolo experimental:
+
+### Línea base (10–50 segundos)
+El SPI se mantiene en un rango bajo, oscilando aproximadamente entre 14 y 38. Este comportamiento es el esperado para un estado de reposo: sin activación simpática relevante, la amplitud del pulso es alta y relativamente estable, donde las fluctuaciones dentro de este rango bajo son atribuibles a variabilidad fisiológica normal (respiración, tono vasomotor basal) y no a un evento nociceptivo.
+
+### CPT / estímulo frío (50–90 s)
+Inmediatamente después de aplicar el frío se observa un salto abrupto del SPI, que pasa de ~19 a ~43 en cuestión de segundos, y se mantiene en niveles elevados durante toda la ventana del estímulo, alcanzando los valores máximos de todo el registro. Este comportamiento es consistente con la activación simpática aguda esperada: la vasoconstricción periférica reduce la amplitud del pulso y la taquicardia acorta el intervalo entre latidos, y como el algoritmo pondera ambos efectos en la misma dirección, el SPI se eleva de forma sostenida. Aún así no se mantiene completamente estable, lo cual refleja la competencia en tiempo real entre el impulso simpático y mecanismos reguladores como el barorreflejo, además de la posible influencia de artefactos de movimiento durante la aplicación del estímulo.
+
+### Recuperación (90–110 s)
+Al retirar el frío, el SPI cae de forma abrupta e inmediata (de ~52 a ~19 en pocos segundos), incluso por debajo del promedio de la línea base. Esta caída es consistente con la hiperemia reactiva descrita en el marco teórico: la vasodilatación compensatoria que sigue al cese de la vasoconstricción aumenta momentáneamente la amplitud del pulso muy por encima de lo normal, lo que reduce fuertemente el SPI. A partir de ese mínimo, el índice muestra una tendencia ascendente gradual y oscilante hacia el final del registro para intentar volver al nivel basal.
 
 ## V. PREGUNTAS PARA LA DISCUSIÓN
 
